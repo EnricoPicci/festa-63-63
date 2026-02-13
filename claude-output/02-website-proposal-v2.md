@@ -1,6 +1,6 @@
 # Proposta v2 per il sito web "63-63" / Website Proposal v2
 
-Questo documento aggiorna e sostituisce la proposta iniziale (`02-website-proposal.md`), integrando i feedback ricevuti e le ricerche effettuate.
+Questo documento aggiorna e sostituisce la proposta iniziale (`01-website-proposal.md`), integrando i feedback ricevuti e le ricerche effettuate.
 
 ---
 
