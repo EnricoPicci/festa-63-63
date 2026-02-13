@@ -29,3 +29,4 @@ The website must be in Italian and English
 
 # Your task
 Your task is to suggest a structure of such a website and how you would build it.
+Write your suggestions in a markdown file in an appropriate folder.
