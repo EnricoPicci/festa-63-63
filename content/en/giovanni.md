@@ -1,2 +1,2 @@
-# Giovanni 
-...
+# Giovanni
+Passionate journalist
