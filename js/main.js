@@ -65,4 +65,48 @@
             lightboxImg.src = '';
         }
     });
+
+    // =====================
+    // Hash-based Page Routing
+    // =====================
+    var mainContent = document.getElementById('main-content');
+    var tombaPage = document.getElementById('tomba-brion-page');
+
+    function showPage(hash) {
+        if (hash === '#tomba-brion' && mainContent && tombaPage) {
+            mainContent.hidden = true;
+            tombaPage.hidden = false;
+            window.scrollTo(0, 0);
+        }
+    }
+
+    function showMain() {
+        if (mainContent && tombaPage) {
+            tombaPage.hidden = true;
+            mainContent.hidden = false;
+            history.replaceState(null, '', window.location.pathname);
+        }
+    }
+
+    // Back link click
+    document.querySelectorAll('.back-link').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            showMain();
+        });
+    });
+
+    // Browser back/forward
+    window.addEventListener('hashchange', function () {
+        if (window.location.hash === '#tomba-brion') {
+            showPage('#tomba-brion');
+        } else {
+            showMain();
+        }
+    });
+
+    // Initial hash check (direct link support)
+    if (window.location.hash === '#tomba-brion') {
+        showPage('#tomba-brion');
+    }
 })();

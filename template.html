@@ -15,6 +15,8 @@
     <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
 </nav>
 
+<main id="main-content">
+
 <!-- ===================== -->
 <!-- SECTION: HERO -->
 <!-- ===================== -->
@@ -168,6 +170,18 @@
                 </a>
             </small>
         </div>
+        <div class="tomba-brion-cta">
+            <div class="content-it">
+                <p><strong>Avete una mattina libera?</strong> A mezz'ora da qui c'e uno dei capolavori dell'architettura italiana del '900.</p>
+            </div>
+            <div class="content-en" hidden>
+                <p><strong>Got a free morning?</strong> Half an hour from here lies one of the masterpieces of 20th-century Italian architecture.</p>
+            </div>
+            <a href="#tomba-brion" class="btn-tomba-brion">
+                <span class="content-it">Scopri la Tomba Brion &rarr;</span>
+                <span class="content-en" hidden>Discover the Brion Tomb &rarr;</span>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -201,6 +215,30 @@
         </div>
     </div>
 </section>
+
+</main>
+
+<!-- ===================== -->
+<!-- PAGE: TOMBA BRION -->
+<!-- ===================== -->
+<div id="tomba-brion-page" hidden>
+    <nav class="back-nav">
+        <a href="#" class="back-link">
+            <span class="content-it">&larr; Torna alla festa</span>
+            <span class="content-en" hidden>&larr; Back to the party</span>
+        </a>
+    </nav>
+    <section class="section section-tomba-brion">
+        <div class="container">
+            <div class="content-it">
+                {{tomba_brion_it}}
+            </div>
+            <div class="content-en" hidden>
+                {{tomba_brion_en}}
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- ===================== -->
 <!-- FOOTER -->

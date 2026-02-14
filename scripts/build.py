@@ -43,6 +43,8 @@ CONTENT_MAP = {
     'luogo_en': ('en', 'venue.md'),
     'dove_dormire_it': ('it', 'dove-dormire.md'),
     'dove_dormire_en': ('en', 'where-to-stay.md'),
+    'tomba_brion_it': ('it', 'tomba-brion.md'),
+    'tomba_brion_en': ('en', 'brion-tomb.md'),
 }
 
 IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'}

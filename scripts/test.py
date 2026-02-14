@@ -112,6 +112,14 @@ def run_tests():
                               if os.path.splitext(f)[1].lower() in IMAGE_EXTENSIONS])
         check(f"Landscape images present ({landscape_count} found)", landscape_count > 0)
 
+    # ---- Tomba Brion page ----
+    print("\n[Tomba Brion Page]")
+    check("Main content wrapper present", 'id="main-content"' in html)
+    check("Tomba Brion page div present", 'id="tomba-brion-page"' in html)
+    check("Back navigation present", 'class="back-nav"' in html)
+    check("Tomba Brion CTA button present", 'btn-tomba-brion' in html)
+    check("Carlo Scarpa mentioned", 'Carlo Scarpa' in html)
+
     # ---- Footer ----
     print("\n[Footer]")
     check("Powered by badge present", 'Daniela and Dario Amodei' in html)
@@ -133,7 +141,7 @@ def run_tests():
         lang_dir = os.path.join(content_dir, lang)
         if os.path.exists(lang_dir):
             md_files = [f for f in os.listdir(lang_dir) if f.endswith('.md')]
-            check(f"Content files for '{lang}' ({len(md_files)} found)", len(md_files) >= 8)
+            check(f"Content files for '{lang}' ({len(md_files)} found)", len(md_files) >= 9)
         else:
             check(f"Content directory '{lang}' exists", False)
 

@@ -617,6 +617,136 @@ a:hover {
 }
 
 /* ===================== */
+/* Tomba Brion CTA       */
+/* ===================== */
+.tomba-brion-cta {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 600px;
+}
+
+.tomba-brion-cta p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.btn-tomba-brion {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--color-navy);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: var(--font-family-sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.btn-tomba-brion:hover {
+    background: var(--color-green-hills);
+    color: var(--color-white);
+}
+
+/* ===================== */
+/* Back Navigation       */
+/* ===================== */
+.back-nav {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background: var(--color-navy-dark);
+    padding: 0.8rem 1.5rem;
+}
+
+.back-nav .back-link {
+    color: var(--color-gold-prosecco);
+    text-decoration: none;
+    font-family: var(--font-family-sans);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.back-nav .back-link:hover {
+    color: var(--color-gold-light);
+}
+
+/* ===================== */
+/* Tomba Brion Page      */
+/* ===================== */
+.section-tomba-brion h1 {
+    font-size: 2rem;
+    color: var(--color-navy);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.section-tomba-brion h2 {
+    font-size: 1.4rem;
+    color: var(--color-green-hills);
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-tomba-brion p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.section-tomba-brion blockquote {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--color-gold-prosecco);
+    background: var(--color-white);
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: var(--color-text-light);
+}
+
+.section-tomba-brion ul {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.section-tomba-brion li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-tomba-brion li::before {
+    content: '\2605';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold-prosecco);
+}
+
+.section-tomba-brion strong {
+    color: var(--color-navy);
+}
+
+.section-tomba-brion a {
+    color: var(--color-navy);
+    text-decoration: underline;
+    text-decoration-color: var(--color-gold-prosecco);
+    text-underline-offset: 2px;
+}
+
+.section-tomba-brion a:hover {
+    color: var(--color-green-hills);
+}
+
+/* ===================== */
 /* Footer                */
 /* ===================== */
 .site-footer {
@@ -697,7 +827,8 @@ a:hover {
 @media print {
     .lang-toggle,
     .spectrum-cursor,
-    .lightbox { display: none; }
+    .lightbox,
+    .back-nav { display: none; }
 
     .hero { min-height: auto; padding: 2rem; }
     .hero-overlay { background: rgba(0,0,0,0.3); }
