@@ -67,6 +67,20 @@
     });
 
     // =====================
+    // RSVP Reveal
+    // =====================
+    var rsvpBtn = document.getElementById('rsvp-cta');
+    var rsvpSection = document.getElementById('rsvp');
+
+    if (rsvpBtn && rsvpSection) {
+        rsvpBtn.addEventListener('click', function () {
+            rsvpSection.hidden = false;
+            rsvpSection.scrollIntoView({ behavior: 'smooth' });
+            rsvpBtn.classList.add('btn-rsvp-cta--active');
+        });
+    }
+
+    // =====================
     // Hash-based Page Routing
     // =====================
     var mainContent = document.getElementById('main-content');

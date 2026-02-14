@@ -60,7 +60,10 @@ Recommended: Option 2 (Formspree)
 # Implementation
 Implement option 1
 
+# Refinement
+The form has to appear when the visitor clicks a button that you have to place below the date. Implement this requirement
 
+# Form urls
 https://forms.gle/4PCS5u68P1hX8pxo9
 https://docs.google.com/forms/d/e/1FAIpQLSdNfE_cojjfiM3vPI-FBASFpH7gMwhh219xQOaAllIfE4WrTQ/viewform?usp=header
 
