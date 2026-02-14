@@ -45,5 +45,9 @@ The pre-commit hook runs `build.py` then `test.py` automatically. GitHub Pages s
 - The site must work without JavaScript (content visible, toggle defaults to Italian)
 - Mobile-first: base styles for mobile, `@media (min-width: 768px)` for tablet/desktop
 
+## Output Documents
+- Generated documents go in `claude-output/`
+- If a document is generated as part of processing a prompt file from `prompts-to-generate-app/`, it must have the same numeric prefix as that prompt file (e.g. prompt `08-add_rsvp.md` → output `08-rsvp-setup-guide.md`)
+
 ## Testing
 Tests verify: all sections present, bilingual content, image references valid, HTML structure correct. Tests run as pre-commit hook and in GitHub Actions.

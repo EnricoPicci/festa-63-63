@@ -45,6 +45,8 @@ CONTENT_MAP = {
     'dove_dormire_en': ('en', 'where-to-stay.md'),
     'tomba_brion_it': ('it', 'tomba-brion.md'),
     'tomba_brion_en': ('en', 'brion-tomb.md'),
+    'rsvp_it': ('it', 'rsvp.md'),
+    'rsvp_en': ('en', 'rsvp.md'),
 }
 
 IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'}

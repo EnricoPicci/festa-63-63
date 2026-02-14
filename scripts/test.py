@@ -56,6 +56,7 @@ def run_tests():
     print("\n[Required Sections]")
     sections = {
         'hero': 'id="hero"',
+        'rsvp': 'id="rsvp"',
         'storia': 'id="storia"',
         'fab-four': 'id="fab-four"',
         'spettro': 'id="spettro"',
