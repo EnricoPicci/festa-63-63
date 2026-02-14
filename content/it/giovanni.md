@@ -1,2 +1,2 @@
 # Giovanni
-...
+Giornalista appassionato
