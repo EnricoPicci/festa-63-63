@@ -1,2 +1,2 @@
 # Stefano
-A great friend of Spinoza
+He chats with Spinoza over lunch and dinner, where Karl sometimes drops by too.

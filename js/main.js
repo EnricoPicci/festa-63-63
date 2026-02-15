@@ -80,6 +80,26 @@
         });
     }
 
+    // Hide RSVP section after Google Form submission
+    var rsvpIframe = document.getElementById('rsvp-iframe');
+    if (rsvpIframe && rsvpSection) {
+        var iframeLoadCount = 0;
+        rsvpIframe.addEventListener('load', function () {
+            iframeLoadCount++;
+            // First load is the initial page load; subsequent loads mean form submission
+            if (iframeLoadCount > 1) {
+                setTimeout(function () {
+                    rsvpSection.hidden = true;
+                    if (rsvpBtn) {
+                        rsvpBtn.textContent = document.documentElement.lang === 'en'
+                            ? 'Thank you!' : 'Grazie!';
+                        rsvpBtn.disabled = true;
+                    }
+                }, 3000);
+            }
+        });
+    }
+
     // =====================
     // Hash-based Page Routing
     // =====================
